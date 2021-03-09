@@ -1,0 +1,20 @@
+{
+  "name": "fpay_task",
+  "version": "1.0.0",
+  "description": "Prime number with nodeJS on Docker",
+  "author": "Nicolas Vera <nicolas.veral@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "web": "node web.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "mocha": "^8.3.1"
+  }
+}
