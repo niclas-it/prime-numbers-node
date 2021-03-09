@@ -31,7 +31,7 @@
 - Correr programa con:
     > node index.js 
     - Método alternativo
-    - npm run start
+    > npm run start
 
 #### Correr set de pruebas 
 
@@ -45,8 +45,8 @@
 - Levantar APP con 
     > npm run web
 - Ejecutar una solicitud GET con el número a calcular
-- Ejemplo: localhost/calculate/15
-    > curl -i localhost/calculate/15
+- Ejemplo: localhost:8000/calculate/15
+    > curl -i localhost:8000/calculate/15
 
 
 
@@ -55,12 +55,13 @@
 > npm install
 > docker build -t fpay/prime-numbers . 
 > docker run -p 8000:8000 -d fpay/prime-numbers
-> curl -i localhost/calculate/15
+> curl -i localhost:8000/calculate/15
 - La alternativa es abrir browser y navegar a http://localhost:8000/calculate/15
 
 - Por otro lado se puede acceder al contenedor y ejecutar el APP por consola.
 > docker exec -it "idcontainer" bash
-> node index.js
+- Luego 
+> npm run start
 
 
 #### Correr APP desde imagen en dockerhub
