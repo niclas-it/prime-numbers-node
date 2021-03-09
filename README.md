@@ -64,12 +64,15 @@
 > npm run start
 
 
-#### Correr APP desde imagen en dockerhub
+#### Correr APP desde imagen en dockerhub (Web)
 
 - Descargar la imagen
 > docker pull niko2019/find-prime-numbers:latest
 - Correr el contenedor
 > docker run -p 8000:8000 -d niko2019/find-prime-numbers
+- Alternativa 1: Abrir el nevegador en localhost:8000/calculate/x_numero  donde x_numero es el numero desde el cual quieren calcular los primos hasta el número 2.
+- Altarnativa 2: hacer una solicitud GET
+> curl -i localhost:8000/calculate/20
 
 
 
